@@ -1,78 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: #f6f8fa;
     color: #333;
 }
 
 header {
-    background-color: #0077b6;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 1em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.2em;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0 0 0;
     display: flex;
     justify-content: center;
-    background-color: #023e8a;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    margin: 0 15px;
+nav li {
+    margin: 0.5em 1em;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
+    opacity: 0.9;
 }
 
 main {
     max-width: 900px;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 0 20px;
+    line-height: 1.7;
+}
+
+h2 {
+    color: #2575fc;
+    border-bottom: 2px solid #6a11cb;
+    padding-bottom: 0.3em;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #ccc;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 th {
-    background-color: #90e0ef;
+    background: #2575fc;
+    color: white;
+    padding: 12px;
 }
 
-td, th {
-    padding: 10px;
-    text-align: left;
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
 }
 
 img {
     width: 100%;
-    max-width: 300px;
-    margin: 10px;
+    max-width: 320px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
 }
 
 footer {
-    background-color: #0077b6;
+    background: #6a11cb;
     color: white;
     text-align: center;
     padding: 1em 0;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
 }
 
 @media (max-width: 600px) {
@@ -80,7 +107,8 @@ footer {
         flex-direction: column;
     }
 
-    img {
-        max-width: 100%;
+    h1 {
+        font-size: 1.8em;
     }
 }
+
