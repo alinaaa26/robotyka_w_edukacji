@@ -1,39 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f5; /* soft cream */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 header {
-    background-color: #0044cc;
-    color: white;
+    background-color: #ffd6e0; /* soft pastel pink */
+    color: #5a2a4c;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em;
 }
 
+/* Main content */
 main {
-    padding: 20px;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
-h1, h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Sections */
+section {
+    background-color: #fff0f5; /* very soft lavender-pink */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* Headings */
+h2 {
+    color: #d966a0; /* soft rose */
+    margin-top: 0;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Images */
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
+/* Links */
+a {
+    color: #d966a0;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    background-color: #222;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 15px 0;
+    color: #5a2a4c;
+    background-color: #ffe6f0; /* soft pastel pink lighter */
+    margin-top: 30px;
 }
