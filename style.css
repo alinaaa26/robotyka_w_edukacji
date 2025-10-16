@@ -11,7 +11,7 @@ body {
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #ff9acb, #ffc0cb);
+  background: #fcd4e4;
   text-align: center;
   padding: 2em 1em 1.5em;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -155,7 +155,7 @@ td {
 
 /* FOOTER */
 footer {
-  background: linear-gradient(135deg, #ff9acb, #ffc0cb);
+  background: #fcd4e4;
   text-align: center;
   padding: 1.2em 0;
   font-size: 0.9em;
