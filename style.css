@@ -9,11 +9,14 @@ body {
   line-height: 1.7;
 }
 
+/* HEADER */
 header {
-  background: #ff00ff;
+  background: linear-gradient(135deg, #ff9acb, #ffc0cb);
   text-align: center;
   padding: 2em 1em 1.5em;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 header h1 {
@@ -23,6 +26,7 @@ header h1 {
   letter-spacing: 0.5px;
 }
 
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: center;
@@ -46,6 +50,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* MAIN CONTENT */
 main {
   max-width: 900px;
   margin: 50px auto;
@@ -68,175 +73,7 @@ h2 {
   margin-bottom: 1em;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-top: 1em;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
-
-th {
-  background: #ffd6e0;
-  color: #555;
-  padding: 12px;
-  font-weight: 600;
-}
-
-td {
-  background: #fff;
-  padding: 12px;
-  border-bottom: 1px solid #f5f5f5;
-}
-
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-img:hover {
-  transform: scale(1.05);
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  flex: 1 1 45%;
-  background: #fff6f8;
-  border-radius: 16px;
-  padding: 1.5em;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
-}
-
-.card h3 {
-  color: #ff7b9c;
-  margin-top: 0;
-}
-
-/* Footer */
-footer {
-  background: #ff00ff;
-  text-align: center;
-  padding: 1.2em 0;
-  font-size: 0.9em;
-  color: #777;
-  margin-top: 40px;
-}
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-
-  .cards {
-    flex-direction: column;
-  }
-}
-
-/* Layout for table + images side by side */
-.zastosowania-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-/* Table styling */
-.table-wrapper {
-  flex: 1 1 300px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fffafc;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-th, td {
-  padding: 0.8rem;
-  text-align: left;
-}
-
-th {
-  background-color: #f9d9e8;
-  color: #444;
-  font-weight: 600;
-}
-
-td {
-  border-top: 1px solid #f2cbd8;
-  color: #555;
-}
-
-/* Image styling */
-.images {
-  flex: 1 1 300px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-.image-card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.image-card:hover {
-  transform: scale(1.02);
-}
-
-.image-card img {
-  width: 100%;
-  display: block;
-  border-bottom: 4px solid #f7bfd5;
-}
-
-.image-card figcaption {
-  padding: 0.5rem 0.8rem;
-  font-size: 0.85em;
-  color: #999;
-  text-align: center;
-  background: #fffafc;
-}
-
-
-/* Section layout */
-#zastosowania {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #fffafc;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  margin: 2rem auto;
-  max-width: 900px;
-}
-
-/* Table styling */
+/* TABLES */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -244,6 +81,7 @@ table {
   border-radius: 10px;
   overflow: hidden;
   background: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
 th {
@@ -259,7 +97,7 @@ td {
   color: #555;
 }
 
-/* Image grid — Pinterest look */
+/* IMAGE GRID — Pinterest look */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -292,6 +130,49 @@ td {
   font-size: 0.85em;
   color: #888;
   background: #fffafc;
+  text-align: center;
 }
 
+/* CARDS (if you use them elsewhere) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+.card {
+  flex: 1 1 45%;
+  background: #fff6f8;
+  border-radius: 16px;
+  padding: 1.5em;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+.card h3 {
+  color: #ff7b9c;
+  margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(135deg, #ff9acb, #ffc0cb);
+  text-align: center;
+  padding: 1.2em 0;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
