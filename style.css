@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: #ffeef5;
+  background: #ff00ff;
   text-align: center;
   padding: 2em 1em 1.5em;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -131,7 +131,7 @@ img:hover {
 
 /* Footer */
 footer {
-  background: #ffeef5;
+  background: #ff00ff;
   text-align: center;
   padding: 1.2em 0;
   font-size: 0.9em;
