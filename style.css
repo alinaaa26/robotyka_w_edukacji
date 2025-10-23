@@ -151,6 +151,8 @@ td {
   color: #888;
   background: #fffafc;
   text-align: center;
+  word-wrap: break-word;      /* break long words/URLs */
+  overflow-wrap: break-word;
 }
 
 
